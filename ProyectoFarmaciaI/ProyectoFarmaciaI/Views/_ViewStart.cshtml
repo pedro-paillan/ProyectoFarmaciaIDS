@@ -1,3 +1,18 @@
-﻿@{
+﻿@if (ViewData["User"] == "")
+{
     Layout = "_Layout";
+
+    <script runat="server">
+        windows.location("/Home");
+    </script>
+
 }
+else
+{
+<script runat="server">
+    windows.location("Login/Login");
+</script>
+    
+
+}
+

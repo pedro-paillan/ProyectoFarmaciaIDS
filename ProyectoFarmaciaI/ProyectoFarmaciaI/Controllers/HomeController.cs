@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using ProyectoFarmaciaI.Models;
+using ProyectoFarmaciaI.Controllers;
 
 
 
@@ -14,7 +15,16 @@ namespace ProyectoFarmaciaI.Controllers
     {
         public IActionResult Index()
         {
- 
+            if (ViewData["User"] == "")
+            {
+                Response.Redirect("Home/index");
+            }
+            else
+            {
+                Response.Redirect("Login/Login");
+
+            }
+
             return View();
         }
 

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ERPyme\\ProyectoFarmaciaI\\ProyectoFarmaciaI\\ProyectoFarmaciaI\\ProyectoFarmaciaI.csproj": {}
+    "C:\\Users\\ERPyme\\ProyectoFarmaciaIDS\\ProyectoFarmaciaI\\ProyectoFarmaciaI\\ProyectoFarmaciaI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ERPyme\\ProyectoFarmaciaI\\ProyectoFarmaciaI\\ProyectoFarmaciaI\\ProyectoFarmaciaI.csproj": {
+    "C:\\Users\\ERPyme\\ProyectoFarmaciaIDS\\ProyectoFarmaciaI\\ProyectoFarmaciaI\\ProyectoFarmaciaI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ERPyme\\ProyectoFarmaciaI\\ProyectoFarmaciaI\\ProyectoFarmaciaI\\ProyectoFarmaciaI.csproj",
+        "projectUniqueName": "C:\\Users\\ERPyme\\ProyectoFarmaciaIDS\\ProyectoFarmaciaI\\ProyectoFarmaciaI\\ProyectoFarmaciaI.csproj",
         "projectName": "ProyectoFarmaciaI",
-        "projectPath": "C:\\Users\\ERPyme\\ProyectoFarmaciaI\\ProyectoFarmaciaI\\ProyectoFarmaciaI\\ProyectoFarmaciaI.csproj",
+        "projectPath": "C:\\Users\\ERPyme\\ProyectoFarmaciaIDS\\ProyectoFarmaciaI\\ProyectoFarmaciaI\\ProyectoFarmaciaI.csproj",
         "packagesPath": "C:\\Users\\ERPyme\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ERPyme\\ProyectoFarmaciaI\\ProyectoFarmaciaI\\ProyectoFarmaciaI\\obj\\",
+        "outputPath": "C:\\Users\\ERPyme\\ProyectoFarmaciaIDS\\ProyectoFarmaciaI\\ProyectoFarmaciaI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ERPyme\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pVgyTyUJKpJdtu6HLR/XF7Y0kkus/pXj7hTDCLPV/WfFlH+eEh32mJOtLBk9vqcHexV+WwRxyCYZbQ+o1Tjoog==",
+  "dgSpecHash": "42ObtrR5cZREgufKKpnROc3nNPn2m6neJLTn+OSJxR6cC/n8d8op9A5MtMOOvJh77CzwSg7JRPLlXbKriXqyeg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ERPyme\\ProyectoFarmaciaI\\ProyectoFarmaciaI\\ProyectoFarmaciaI\\ProyectoFarmaciaI.csproj",
+  "projectFilePath": "C:\\Users\\ERPyme\\ProyectoFarmaciaIDS\\ProyectoFarmaciaI\\ProyectoFarmaciaI\\ProyectoFarmaciaI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ERPyme\\.nuget\\packages\\microsoft.aspnetcore\\2.1.7\\microsoft.aspnetcore.2.1.7.nupkg.sha512",
     "C:\\Users\\ERPyme\\.nuget\\packages\\microsoft.aspnetcore.antiforgery\\2.1.1\\microsoft.aspnetcore.antiforgery.2.1.1.nupkg.sha512",
