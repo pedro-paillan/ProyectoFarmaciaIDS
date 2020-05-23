@@ -1,0 +1,123 @@
+﻿@{
+    ViewBag.Title = "";
+}
+
+
+
+<section id="app">
+    <div class="row">
+        <div class="col-12 " style="padding-top: 30px!important;">
+
+            <v-server-table ref="vtContactos" :columns="vt_gestautomail.columns" :options="vt_gestautomail.options">
+                <div slot="0" slot-scope="props" v-on:click="Detalles(props.row[2],props.row[3])">
+                    {{props.row[0]}}
+                </div>
+            </v-server-table>
+        </div>
+    </div>
+
+
+
+</section>
+
+<br />
+<br />
+<br />
+<br />
+<br />
+
+
+<section id="content">
+    <section class="vbox bg-white">
+
+        <section style="min-height:240px;width:80%;">
+            <div id="mimap">
+            </div>
+        </section>
+    </section>
+    <a href="#" class="hide nav-off-screen-block" data-toggle="class:nav-off-screen, open" data-target="#nav,html"></a>
+</section>
+
+
+@section scripts {
+
+
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue-tables-2@1.4.70/dist/vue-tables-2.min.js" integrity="sha256-DVmgriNEDY04eRA8XfMq46kvAbSHecwl6KEN1Y3nG4s=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+    <script src="~/Scripts/js/Home/listado_farmacias.js"></script>
+    <script type="text/javascript">var e = "@ViewBag.res";</script>
+
+    <script>
+        if (e == true) {
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: IP,
+                footer: '<a href>Registrarse</a> <p></p> <a href>Olvide mi contraseña</a>'
+            });
+        }
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBdq3CtKPUOEzcg9YOztsNiiUKkRVJESBM&callback=initMap" async defer></script>
+    <script>
+        // Note: This example requires that you consent to location sharing when
+        // prompted by your browser. If you see the error "The Geolocation service
+        // failed.", it means you probably did not give permission for the browser to
+        // locate you.
+
+
+        var map, infoWindow;
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('mimap'), {
+                center: { lat: -34.397, lng: 150.644 },
+                zoom: 6
+            });
+            infoWindow = new google.maps.InfoWindow;
+
+            var pos = {};
+
+            // Try HTML5 geolocation.
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(function (position) {
+                    pos = {
+                        lat: position.coords.latitude,
+                        lng: position.coords.longitude
+                    };
+
+                    infoWindow.setPosition(pos);
+                    infoWindow.setContent('');
+                    infoWindow.open(map);
+                    map.setCenter(pos);
+                }, function () {
+                    handleLocationError(true, infoWindow, map.getCenter());
+                });
+
+
+            } else {
+                // Browser doesn't support Geolocation
+                handleLocationError(false, infoWindow, map.getCenter());
+            }
+        }
+        function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+            infoWindow.setPosition(pos);
+            infoWindow.setContent(browserHasGeolocation ?
+                'Error: The Geolocation service failed.' :
+                'Error: Your browser doesn\'t support geolocation.');
+            infoWindow.open(map);
+        }
+
+        function asignarMapa(lat, lon) {
+
+            map = new google.maps.Map(document.getElementById('mimap'), {
+                center: { lat: lat, lng: lon },
+                zoom: 18,
+            });
+
+        }
+
+    </script>
+}
+
